@@ -1,0 +1,347 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            header {
+                width: auto;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/pakistan-1715201_1280.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 70% center;
+            }
+            
+            nav {
+                width: 100%;
+                height: 15vh;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.2);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+            }
+            
+            nav .logo {
+                width: 25%;
+                text-align: center;
+            }
+            
+            nav .menu {
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            nav .menu a {
+                width: auto;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+            
+            main {
+                width: 100%;
+                height: 85vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            
+            section {
+                text-align: center;
+            }
+            
+            section h3 {
+                font-weight: 200;
+                font-size: 35px;
+                letter-spacing: 3;
+                text-shadow: 1px 1px 2px black;
+            }
+            
+            section h1 {
+                margin: 20px 0 18px 0;
+                padding-top: 20px;
+                font-size: 40px;
+                font-weight: 400;
+                text-shadow: 2px 1px 5px black;
+                text-transform: uppercase;
+            }
+            
+            section p {
+                font-size: 25px;
+                word-spacing: 2px;
+                margin-bottom: 25px;
+                text-shadow: 1px 1px 1px black;
+            }
+            
+            section a {
+                padding: 12px 30px;
+                border-radius: 4px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 500;
+                transition: all 0.5s;
+                letter-spacing: 1px;
+            }
+            
+            section .btnone {
+                background-color: rgb(153, 153, 153);
+                color: black;
+                box-shadow: 1px 1px 5px black;
+            }
+            
+            section .btntwo {
+                background-color: rgb(0, 95, 0);
+                color: white;
+                box-shadow: 1px 1px 5px black;
+            }
+            
+            .logo {
+                /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 2s !important;
+                animation-iteration-count: infinite;
+                /* don't forget to set a duration! */
+            }
+            
+            .active {
+                color: rgb(0, 196, 0) !important;
+            }
+            
+            .btnone:hover {
+                color: white;
+                background-color: rgb(0, 95, 0);
+            }
+            
+            .btntwo:hover {
+                color: black;
+                background-color: rgb(153, 153, 153);
+            }
+            
+            .change-content:after {
+                content: '';
+                animation: text 10s infinite linear;
+                color: rgb(0, 196, 0);
+            }
+            
+            @keyframes text {
+                0% {
+                    content: "LAHORE";
+                }
+                10% {
+                    content: "ISLAMABAD";
+                }
+                20% {
+                    content: "FAISALABAD";
+                }
+                30% {
+                    content: "KARACHI";
+                }
+                40% {
+                    content: "KASHMEER";
+                }
+                50% {
+                    content: "MURREE";
+                }
+                60% {
+                    content: "GILGIT";
+                }
+                70% {
+                    content: "HUNZA";
+                }
+                80% {
+                    content: "CHITRAL";
+                }
+                90% {
+                    content: "SIACHEN";
+                }
+                100% {
+                    content: "MANSEHRA";
+                }
+            }
+            
+            @media only screen and (max-width:850px) {
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: auto;
+                }
+                .logo {
+                    margin-top: 20px;
+                }
+                nav .menu {
+                    display: flex;
+                    flex-direction: column;
+                    width: auto;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                nav .menu a {
+                    margin-top: 20px;
+                }
+                header {
+                    height: auto;
+                }
+            }
+            
+            @media only screen and (max-width:662px) {
+                .logo h1 {
+                    font-size: 20px;
+                }
+                .logo {
+                    width: auto;
+                }
+                section h3 {
+                    font-weight: 250;
+                    font-size: 30px;
+                }
+                section h1 {
+                    font-size: 30px;
+                    font-weight: 300;
+                }
+                section p {
+                    font-size: 23px;
+                }
+                section a {
+                    font-size: 11px;
+                    font-weight: 400;
+                }
+            }
+            
+            .places {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background-color: rgb(153, 153, 153);
+                margin-top: 40px;
+            }
+            
+            @media only screen and (max-width:350px) {
+                section h1 {
+                    font-size: 25px;
+                    font-weight: 250;
+                }
+            }
+            
+            .card {
+                background-color: white;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: auto;
+                border: 0px solid black !important;
+                border-radius: 10px !important;
+            }
+            
+            .card img {
+                border: 0px solid black !important;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            
+            .card h3 {
+                padding-top: 10px!important;
+                text-shadow: none;
+            }
+            
+            .card p {
+                font-size: 15px !important;
+                text-shadow: none;
+                margin-top: 10px;
+            }
+            
+            .card .btn {
+                background-color: rgb(0, 110, 0);
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                border: 0px solid black !important;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            
+            .btn-a:hover {
+                background-color: white;
+                color: black;
+            }
+            
+            .card .btn a {
+                color: white;
+            }
+            
+            .mt {
+                margin-top: 25px !important;
+                color: rgb(0, 110, 0);
+                font-weight: bold;
+                text-shadow: none !important;
+            }
+            
+            .b-p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .place-animation {
+                width: 100%;
+                margin-top: 20px;
+                height: 550px;
+                background-image: '';
+                background-position: center;
+                background-size: cover;
+                animation-name: example;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            
+            @keyframes example {
+                0% {
+                    background-image: url(img/hunza-2215996_1280.jpg);
+                }
+                20% {
+                    background-image: url(img/lowaritop-1978446_1280.jpg);
+                }
+                40% {
+                    background-image: url(img/mountains-1512608_1280.jpg);
+                }
+                60% {
+                    background-image: url(img/pakistan-4236154_1280.jpg);
+                }
+                80% {
+                    background-image: url(img/lake-saiful-muluk-1683450_1280.jpg);
+                }
+                100% {
+                    background-image: url(img/zal-zal-lake-azad-kashmir-4405230_1280.jpg);
+                }
+            }
+            
+            footer {
+                background-color: rgb(0, 110, 0);
+                color: white;
+                font-size: 18px;
+                margin-top: 50px;
+            }
+            
+            footer .responsive a {
+                color: black;
+                text-decoration: none;
+            }
+            
+            footer .responsive {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 20px;
+            }
+            
+            section hr {
+                color: rgb(0, 110, 0) !important;
+                font-size: 200px;
+            }
