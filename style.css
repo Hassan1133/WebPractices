@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar start  */
+
+.navbar {
+    background: #001b47;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .menu {
+    width: 25%;
+}
+
+.navbar .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu ul li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.navbar .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+@media only screen and (max-width:1200px) {
+    .navbar {
+        width: auto;
+    }
+    .navbar .menu {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:1040px) {
+    .navbar {
+        width: auto;
+    }
+    .navbar .menu {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .navbar {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar .menu {
+        width: 60%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .navbar .menu {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .navbar .menu {
+        width: 95%;
+    }
+}
+
+
+/* navbar end  */
+
+
+/* main start  */
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    height: auto;
+    background-color: #001331;
+}
+
+.sidebar .first-logo img {
+    filter: invert(100%);
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.sidebar .second-logo {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.sidebar .second-logo img {
+    border-radius: 50%;
+}
+
+.sidebar .third-logo {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.sidebar .fourth-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar .fourth-logo-img {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.sidebar .fourth-logo img {
+    filter: invert(100%);
+}
+
+.sidebar-items {
+    padding-top: 50px;
+}
+
+.sidebar-items img {
+    filter: invert(100%);
+    padding-left: 20px;
+}
+
+.sidebar-items ul li {
+    padding: 30px;
+}
+
+.sidebar-items ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+    position: relative;
+    bottom: 3px;
+}
+
+.sidebar-items ul li a span {
+    padding-left: 15px;
+}
+
+.sidebar-items ul .active {
+    background: #001b47;
+}
+
+.sidebar-items ul .active a {
+    color: orange;
+}
+
+.main-Dasboard {
+    width: 75%;
+    height: auto;
+    background-color: #f6f6f6;
+}
+
+.user-panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.user-panel-text {
+    font-size: 20px;
+}
+
+.user-panel a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.dashboard-container {
+    padding: 30px;
+}
+
+.sellback {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.sellback .sellback-text h3 {
+    font-size: 23px;
+}
+
+.sellback .btn-1 {
+    font-size: 15px;
+    position: relative;
+    top: 5px;
+    color: dodgerblue;
+}
+
+.sellback-btn {
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    top: 5px;
+    position: relative;
+}
+
+.sold-bonds-heading {
+    margin-top: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.user-bonds-text {
+    font-size: 20px;
+}
+
+@media only screen and (max-width:1050px) {
+    .sidebar {
+        display: none;
+    }
+    .main-Dasboard {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:655px) {
+    .user-panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sellback {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sellback-btn {
+        top: 10px;
+        padding: 5px 20px;
+    }
+    .sellback .btn-1 {
+        top: 8px;
+    }
+}
+
+@media only screen and (max-width:468px) {
+    .user-panel-text {
+        font-size: 15px;
+    }
+    .user-panel a {
+        font-size: 15px;
+    }
+    .sellback .sellback-text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .sellback-btn {
+        padding: 5px 15px;
+    }
+    .sellback .btn-1 {
+        top: 8px;
+    }
+    .user-bonds-text {
+        font-size: 15px;
+    }
+    .sold-bonds-logo img {
+        width: 23px;
+    }
+}
+
+.sold-bonds {
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+    padding: 20px;
+}
+
+.soldbonds-wrapper {
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.collect {
+    background: #00E95D;
+    border-radius: 50px;
+    padding: 3.5px;
+    font-size: 12px;
+}
+
+.one {
+    width: 100%;
+    padding-top: 10px;
+    background: #f6f6f6;
+}
+
+.one td img {
+    width: 10px;
+}
+
+.one td {
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* ----------- class Two------------ */
+
+.two {
+    width: 100%;
+    padding-top: 10px;
+    background: white;
+}
+
+.two td img {
+    width: 10px;
+}
+
+.two td {
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* ----------css for dashboard buttons----------- */
+
+.pending {
+    background: #FE9C00;
+    border-radius: 50px;
+    padding: 3.5px;
+    font-size: 12px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.declined {
+    background: red;
+    border-radius: 50px;
+    padding: 3.5px;
+    font-size: 12px;
+    color: white;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+
+/* main end  */
+
+
+/* footer start  */
+
+footer {
+    background-color: black;
+    padding: 40px 30px;
+}
+
+footer hr {
+    width: 86%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item-1 {
+    color: white;
+}
+
+.footer-item-1 h2 {
+    padding: 15px 0px;
+    text-decoration: underline;
+}
+
+.footer-item-1 p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-item-1 a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid orange;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.footer-item-2 {
+    color: white;
+}
+
+.footer-item-2 h2 {
+    padding: 15px 0px;
+    text-decoration: underline;
+}
+
+.footer-item-2 li {
+    list-style: none;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+.footer-item-2 li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-logo {
+    filter: invert(100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 10px;
+}
+
+@media only screen and (max-width:850px) {
+    .footer-container {
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashboard-container {
+        padding: 10px;
+    }
+    footer {
+        background-color: black;
+        padding: 40px 10px;
+    }
+    .footer-item-1 {
+        width: auto;
+    }
+    .footer-item-2 {
+        width: auto;
+        margin-top: 40px;
+    }
+    .footer-item-3 {
+        width: auto;
+    }
+}
+
+
+/* footer end  */
