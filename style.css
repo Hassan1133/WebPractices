@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card {
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card h1 {
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+    font-size: 10px;
+    font-size: 15px;
+}
+
+.pakistan {
+    color: white;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center
+    /* animation
+    ; */
+}
+
+
+/* animation */
+
+.pakistan .animate__animated {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+main .animate__animated {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
