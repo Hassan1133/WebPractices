@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    width: 300px;
+    border: 2px solid grey;
+    height: 382px;
+    padding: 5px;
+}
+
+.result input {
+    width: 99%;
+    font-size: 20px;
+    height: 50px;
+}
+
+.full-btn button {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+.btn button {
+    width: 24%;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.half-btn button {
+    width: 32.4%;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
