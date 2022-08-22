@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: darkred;
+    }
+    
+    main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .counterContainer {
+        text-align: center;
+        padding: 30px;
+        color: white;
+    }
+    
+    .counter {
+        font-size: 50px;
+        font-weight: bold;
+        padding-bottom: 25px;
+    }
+    
+    .counterContainer .fa {
+        padding-bottom: 25px;
+    }
+    
+    .counterContainer span {
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="counterContainer">
+            <i class="fa fa-check fa-3x"></i>
+            <div class="counter" data-target="500"></div>
+            <span>Completed Projects</span>
+        </div>
+        <div class="counterContainer">
+            <i class="fa fa-users fa-3x"></i>
+            <div class="counter" data-target="400"></div>
+            <span>Happy Customers</span>
+        </div>
+        <div class="counterContainer">
+            <i class="fa fa-list-ul fa-3x"></i>
+            <div class="counter" data-target="300"></div>
+            <span>On Going Projects</span>
+        </div>
+    </main>
+
+    <script>
+        let counters = document.querySelectorAll('.counter');
+
+        counters.forEach(function(counter) {
+
+            counter.innerHTML = 0;
+
+            function updateCounter() {
+
+                let targetCount = +counter.getAttribute('data-target');
+
+                let startCount = Number(counter.innerHTML);
+
+                let increment = targetCount / 100;
+
+                if (startCount < targetCount) {
+
+                    counter.innerHTML = `${Math.round(startCount + increment)}`;
+
+                    setTimeout(updateCounter, 50);
+
+                }
+
+            }
+            updateCounter();
+
+        });
+    </script>
+</body>
+
+</html>
