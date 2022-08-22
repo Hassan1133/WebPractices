@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(3, 202, 152);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    height: auto;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 4px black;
+    padding: 10px;
+}
+
+@media only screen and (max-width:900px) {
+    .main {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .main {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .main {
+        flex-direction: column;
+    }
+    .main-1 {
+        width: 100% !important;
+    }
+    .main-2 {
+        width: 100% !important;
+    }
+}
+
+.main-1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-1 h1 {
+    color: rgb(3, 202, 152);
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-left: 8px;
+    font-family: 'Varela Round', sans-serif;
+    animation-duration: 1s !important;
+    animation-iteration-count: infinite;
+}
+
+.main-1 hr {
+    background-color: rgb(3, 202, 152);
+    width: 3px;
+    height: 110px;
+    border: none;
+    outline: none;
+}
+
+.main-2 {
+    width: 50%;
+}
+
+.main-2 .form-group {
+    padding: 20px;
+}
+
+.main-2 .form-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.main-2 .form-group input::placeholder {
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+}
+
+.main-2 .btn {
+    background-color: transparent;
+    color: rgb(3, 202, 152);
+    border: none;
+    outline: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+.show-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.show-content h3 {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
