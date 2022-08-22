@@ -1,0 +1,153 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* start of header-style */
+    
+    header {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/smoke-376543_1920.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    nav {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+    }
+    
+    .logo {
+        width: 25%;
+        text-align: center;
+    }
+    
+    .menu {
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    
+    .menu li {
+        list-style: none;
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: white;
+        /* font-weight: bold; */
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 5px;
+        transition: all 0.9s;
+    }
+    
+    .menu li a:hover {
+        color: black;
+        background-color: white;
+    }
+    
+    @media only screen and (max-width:960px) {
+        header {
+            height: auto;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .logo {
+            width: auto;
+            margin-top: 15px;
+        }
+        nav .menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        nav .menu li {
+            margin-top: 20px;
+        }
+    }
+    /* end of header-style */
+    /* start of header-main-section */
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 100%;
+        height: 85vh;
+    }
+    
+    main section {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    main section h3 {
+        font-size: 30px;
+        text-shadow: 1px 1px 2px black;
+        font-weight: 300;
+    }
+    
+    main section h1 {
+        margin-top: 10px;
+        font-size: 35px;
+        font-weight: 300;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    main section .btnone {
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 6px 10px 6px 10px;
+        color: white;
+    }
+    
+    main section .btntwo {
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 8px;
+        color: white;
+        padding: 6px 10px 6px 10px;
+    }
+    
+    main .button {
+        margin-top: 20px;
+    }
+    
+    .change-color {
+        color: rgb(32, 93, 151);
+    }
+    
+    .animate-heading {
+        animation-duration: 2s !important;
+        animation-iteration-count: 1;
+    }
+    
+    @media only screen and (max-width:650px) {
+        main section h1 {
+            font-size: 25px;
+            font-weight: 250;
+        }
+        main section h3 {
+            font-size: 22px;
+            font-weight: 250;
+        }
+    }
