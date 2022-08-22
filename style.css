@@ -1,0 +1,256 @@
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Baloo Bhaina 2", cursive;
+    }
+    /* start of navbar */
+    
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/tomatoes-5365186_1920.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .navbar {
+        height: 15vh;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 20px;
+        padding: 0 10px 0 10px;
+    }
+    
+    .navbar ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+    /* end of navbar */
+    /* start of home-section */
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+    
+    .home h1 {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .home p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .btn {
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: brown;
+        color: white;
+        padding: 2px 10px 1px 10px;
+        text-decoration: none;
+        cursor: pointer;
+        text-shadow: 2px 2px 2px black;
+        margin-top: 10px;
+    }
+    
+    @media only screen and (max-width:1158px) {
+        .navbar ul {
+            width: 40%;
+        }
+    }
+    
+    @media only screen and (max-width:900px) {
+        .navbar ul {
+            width: 50%;
+        }
+    }
+    
+    @media only screen and (max-width:700px) {
+        .navbar {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+        .navbar ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    @media only screen and (max-width:650px) {
+        .home {
+            height: auto;
+            padding-bottom: 50px;
+            padding-top: 30px;
+        }
+        .home h1 {
+            font-size: 35px;
+        }
+        .home p {
+            font-size: 15px;
+        }
+    }
+    
+    @media only screen and (max-width:450px) {
+        .home h1 {
+            font-size: 25px;
+        }
+        .home p {
+            font-size: 15px;
+        }
+        .home .btn {
+            font-size: 15px;
+        }
+    }
+    /* end of home-section */
+    /* start of services-section */
+    
+    .services-section h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 25px;
+    }
+    
+    .services {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    
+    .services .box {
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+        border: 2px solid brown;
+        border-radius: 10px;
+        background-color: rgb(241, 241, 241);
+        margin-top: 20px;
+    }
+    
+    .change-color {
+        height: 1px;
+        background-color: brown !important;
+    }
+    /* client section */
+    
+    .client-section {
+        margin-top: 30px;
+    }
+    
+    .client-section h1 {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        padding-top: 30px;
+        text-shadow: 2px 2px 4px black;
+    }
+    
+    .client-main {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/meal-2834549_1280.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .clients {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    /* end of client section */
+    /* contact section  */
+    
+    .contact-main {
+        background-image: url(img/contact-us-4193523_1920.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .contact-main h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        padding: 5px;
+        border-radius: 9px;
+        border: 1px solid rgb(95, 95, 95);
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .contact form {
+        width: 40%;
+    }
+    
+    .contact label {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width:850px) {
+        .contact form {
+            width: 65%;
+        }
+    }
+    /* end of contact section  */
+    /* footer  */
+    
+    .center {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+    }
+    /* end of footer  */
