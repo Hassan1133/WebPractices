@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkblue;
+        }
+        
+        main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image {
+            width: 96%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            color: white;
+        }
+        
+        .btn {
+            display: flex;
+            justify-content: space-around;
+            width: 96%;
+        }
+        
+        button {
+            background-color: yellow;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>You turn the light on?</h1>
+            <div class="image"><img src="img/lightbulb.png" alt="" width="150" id="image"></div>
+            <div class="btn">
+                <button id="on" onclick="lightOn()"><b>Light ON</b></button>
+                <button id="off" onclick="lightOff()"><b>Light OFF</b></button>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        let image = document.getElementById('image');
+
+        function lightOn() {
+            image.src = 'img/lightbulb.png';
+        }
+
+        function lightOff() {
+            image.src = 'img/15-Light-Bulb-icon.png';
+        }
+    </script>
+</body>
+
+</html>
